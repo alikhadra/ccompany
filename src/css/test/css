@@ -1,0 +1,13 @@
+#carousel-product .carousel-item .product1 {
+  color: orange;
+}
+
+#carousel-product .carousel-item .product2 {
+  color: green;
+}
+
+#carousel-product .carousel-item .product3 {
+  color: blue;
+}
+
+/*# sourceMappingURL=css.map */
