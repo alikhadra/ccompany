@@ -1,11 +1,22 @@
 @import './_variables';
+@import './mixins';
 
 #carousel-product .carousel-item .product1 {
 	color: $orange-color;
 }
-#carousel-product .carousel-item .product2 {
+  #carousel-product .carousel-item .product2 {
 	color: $green-color;
-}
-#carousel-product .carousel-item .product3 {
+  }
+ #carousel-product .carousel-item .product3 {
 	color: $blue-color;
+}
+
+#nav1 {
+	@include bgColor(#F0DB4F);
+}
+#nav2 {
+	@include bgColor(#a4d484);
+}
+#nav3 {
+	@include bgColor(#7eb3df);
 }

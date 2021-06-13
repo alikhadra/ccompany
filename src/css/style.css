@@ -88,12 +88,21 @@ nav.navbar-nav .navbar-nav li .nav-link:active:focus
 	margin-left: auto;
 	margin-top: 40px;
 }
-
+#carousel-featured {
+	position: relative;
+}
 #carousel-featured .carousel-control-prev,
 #carousel-featured .carousel-control-next {
-    color: #868686;
+    color: #e48d3b;
 	font-size: 18px;
-
+}
+#carousel-featured .fa-chevron-right {
+	position: absolute;
+	left: 100px;
+}
+#carousel-featured .fa-chevron-left {
+	position: absolute;
+	right: 100px;
 }
 section.service {
 	margin-bottom: 50px;
@@ -109,20 +118,18 @@ section.service {
 	margin-top: 30px;
 }
 section.service .card {
-	margin-right: 50px;
 	border: none;
 }
 section.service .card .card-header {
 	text-align: center;
 	background-color: #ddd;
 	padding: 15px;
-	border-radius: 3px;
 }
 section.service .card .card-header span {
 	background-color: #cec;
 	padding: 10px;
 	border: 1px solid #000;
-	border-radius: 20%;
+	border-radius: 10px;
 	font-size: 20px;
 	font-weight: bold;
 	display: block;
@@ -289,7 +296,6 @@ footer #footer-copyright-social a {
 /***********
    Product-Page-Format
 ***********/
-/* product1 */
 #carousel-product {
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -375,7 +381,6 @@ footer #footer-copyright-social a {
 section.similar-products {
 	margin-bottom: 50px;
 }
-
 
 
 /***********
@@ -513,14 +518,17 @@ section.similar-products {
 		margin-right: 100px;
 	}
 
-	section.service .card {
-		margin-right: 5px;
-	}
-
 	#carousel-product1+.add-to-cart-btn,
 	#carousel-product2+.add-to-cart-btn,
 	#carousel-product3+.add-to-cart-btn {
 		margin-right: 290px;
+	}
+	
+	#carousel-featured .fa-chevron-right {
+		right: 10%;
+	}
+	#carousel-featured .fa-chevron-left {
+		right: 10%;
 	}
 }
 
@@ -530,9 +538,9 @@ section.similar-products {
 		width: 38%;
 	}
 
-	section.service .col-4 {
-		margin: 0;
-		padding: 0;
+	section.service .col-md-4 {
+		margin-bottom: 10px;
+		padding: 5px;
 	}
 
 	#carousel-product1+.add-to-cart-btn,
@@ -540,13 +548,27 @@ section.similar-products {
 	#carousel-product3+.add-to-cart-btn {
 		margin-right: 200px;
 	}
+	section.products .custom-card .add-to-cart-btn {
+		margin-right: 35%;
+	}
+	section.products .custom-card {
+		border-top: 1px solid #ebebeb;
+		margin-bottom: 30px;
+	}
+	section.similar-products .custom-card {
+		border-top: 1px solid #ebebeb;
+		margin-bottom: 30px;
+	}
 }
 
 @media(max-width:575px) {
 	.navbar-header .navbar-brand {
 	   margin-right: 100px;
 }
-
+.row-map {
+	border-bottom: 3px solid #868686;
+	padding-bottom: 30px;
+}
 
 }
 @media (max-width:548px) {
